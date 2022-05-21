@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Lingrong Zhang's Home Page</title>
+<html  oncontextmenu=self.event.returnValue=false onselectstart="return false">
+<head oncontextmenu=self.event.returnValue=false onselectstart="return false">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="source/js/header.js"></script>
+    <title>张毛毛</title>
 </head>
-<body style="margin: 0px; height:850px; width:auto">
-<iframe src="FrameSetting.html" style="height:100%;width:100%;border-width:0px;">
-</iframe>
+<body>
+    <div class="change" id="index_card">
+        <center><img class="change" id="favorite" style="width:160px;margin-top:-50px;" src="source/img/favorite.jpg"><br>
+        <b style="font-weight: 300;font-size:200%;">张毛毛</b><br>
+        <b><span style="font-weight: 300;" class="text-muted text-xs block">
+        <div id="chakhsu"></div> 
+        <script> var chakhsu = function (r) {
+        function t() {
+            return b[Math.floor(Math.random() * b.length)]} 
+        function e() {
+            return String.fromCharCode(94 * Math.random() + 33)
+        } 
+        function n(r) {
+            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) { 
+                var l = document.createElement("span"); 
+                l.textContent = e(), l.style.color = t(), n.appendChild(l) 
+        } 
+        return n
+        }
+        function i() {
+            var t = o[c.skillI]; 
+            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? 
+            (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ?                 c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? 
+        c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? 
+        (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? 
+        Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d) 
+        }  
+        var l = "", o = ["摸鱼、摸鱼、还是摸鱼" ].map(function (r) {return r + ""}), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g};
+        i() }; 
+    chakhsu(document.getElementById('chakhsu')); 
+    </script>
+            
+            
+            
+        <p class="change" id="icons">
+            <a href="https://mail.qq.com/" target="_blank" rel="noopener"><i class="iconfont icon-youxiang1"></i></a>&nbsp;
+            <a href="https://github.com/zlr-zmm" target="_blank" rel="noopener"><i style="color:#99453c;" class="iconfont icon-github3"></i></a>&nbsp;
+            <a href="https://space.bilibili.com/476038805" target="_blank" rel="noopener"><i style="color:#d63e6c;" class="iconfont icon-bilibili"></i></a>&nbsp;
+            <a href="https://www.bilibili.com/video/BV1yr4y1m7sg?spm_id_from=333.337.search-card.all.click" target="_blank" rel="noopener"><i style="color:#1b9ff1;" class="iconfont icon-QQ"></i></a>&nbsp;
+        </p>
+        </center>
+        <center>
+        <div class="buttones">
+            <a href="project.html">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">省级学科竞赛</b><br>Discipline competition
+                </button>
+            </a>
+            <a href="notes.html">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">便笺</b><br>Notes
+                </button>
+            </a>
+            <a href="say.html">
+                <button class="button_1">
+                    <b style="font-size:15px;font-weight: 300;">碎语</b><br>Say
+                </button>
+            </a>
+        </div>
+        </center>
+    </div>
+    <footer id="footer">
+        <script type="text/javascript" src="source/js/footer.js"></script>
+    </footer>
 
 </body>
+
 </html>
